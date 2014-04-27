@@ -1,11 +1,13 @@
-def checkio(a, b):
+def checkio(string):
     """
-        sums two passed arguments
+        Get URLs from string.
     """
     return None
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio(3, 2) == 5
-    assert checkio(5, 7) == 12
+    assert("分享兩個連結:"
+           "死亡之握-http://goo.gl/abc5566"
+           "馬耳卡茸-https://goo.gl/def7788") == ["http://goo.gl/abc5566", "https://goo.gl/def7788"]
+    assert("各位同學, 這次報告要使用的server在sip://taiwan.tai"
+           "pei/A___Aa,請大家在午夜十二點前交出 by 助教 >///<") == ["sip://taiwan.taipei/A___Aa"] 
     print('Done')
