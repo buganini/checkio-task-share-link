@@ -1,9 +1,9 @@
 <p>
-    Get URLs in CJK communications.
+    Get HTTP/HTTPS Hyperlinks in communications.
 </p>
 
 <p>
-    Ref: <a href="http://en.wikipedia.org/wiki/Uniform_resource_locator#List_of_allowed_URL_characters">List of allowed URL characters</a>
+    Just get HTTP/HTTPS hyperlinks in string.
 </p>
 
 <p>
@@ -21,10 +21,6 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio("分享兩個連結:"
-        "死亡之握-http://goo.gl/abc5566"
-        "馬耳卡茸-https://goo.gl/def7788") == ["http://goo.gl/abc5566", "https://goo.gl/def7788"]
-checkio("各位同學, 這次報告要使用的server在sip://taiwan.tai"
-        "pei/A___Aa,請大家在午夜十二點前交出 by 助教 >///<") == ["sip://taiwan.taipei/A___Aa"] 
+checkio("台灣國家網站網址 -> http://台灣.taipei:八零波/ ") == ["http://台灣.taipei:八零波/"]
     </pre>
 </div>
