@@ -3,7 +3,7 @@
 </p>
 
 <p>
-    Just get HTTP/HTTPS hyperlinks in string.
+    Please get HTTP/HTTPS hyperlinks in string, which starts with "http://" or "https://" and contains only digits, alphabet, and some ASCII characters. Ref: http://en.wikipedia.org/wiki/Uniform_resource_locator#List_of_allowed_URL_characters
 </p>
 
 <p>
@@ -21,6 +21,6 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio("台灣國家網站網址 -> http://台灣.taipei:八零波/ ") == ["http://台灣.taipei:八零波/"]
+checkio("http://taiwan.taipei/台灣在台北國裡? ") == ["http://taiwan.taipei/"]
     </pre>
 </div>
