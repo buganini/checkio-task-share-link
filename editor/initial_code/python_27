@@ -7,5 +7,5 @@ def checkio(string):
     return None
 
 if __name__ == '__main__':
-    assert checkio("台灣國家網站網址 -> http://台灣.taipei:八零波/ ") == ["http://台灣.taipei:八零波/"]
+    assert checkio(u"http://taiwan.taipei/台灣在台北國裡? ") == ["http://taiwan.taipei/"]
     print('Done')
