@@ -3,15 +3,14 @@
 </p>
 
 <p>
-    Please get HTTP/HTTPS hyperlinks in string, which starts with "http://" or "https://" and contains only digits, alphabet, and some ASCII characters. Ref: http://en.wikipedia.org/wiki/Uniform_resource_locator#List_of_allowed_URL_characters
+    Please get URLs from given string. URLs should start with "http://" or "https://",<br/>
+    contain HTTP GET query string, and allow unicode string except for whitespace characters.<br/>
+<p>
+    <strong>Input: </strong>A string including URLs.
 </p>
 
 <p>
-    <strong>Input: </strong>An string in non-Roman with URLs.
-</p>
-
-<p>
-    <strong>Output: </strong> An list contains all URLs in class string.
+    <strong>Output: </strong> A list contains all URLs in class string.
 </p>
 
 
@@ -21,6 +20,6 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio("http://taiwan.taipei/台灣在台北國裡? ") == ["http://taiwan.taipei/"]
+checkio(u"http://台灣.taipei/") == [u"http://台灣.taipei/"]
     </pre>
 </div>
