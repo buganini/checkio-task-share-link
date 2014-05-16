@@ -15,8 +15,8 @@ TESTS = {
             "answer": [u"https://www.google.com/",u"http://lmgtfy.com/?q=keyword"],
         },
         {
-            "input": u'"https://192.168.0.1/", "https://127.0.0.1"',
-            "answer": [u"http://192.168.0.1/",u"https://127.0.0.1"],
+            "input": u'"https://192.168.0.1/ https://127.0.0.1"',
+            "answer": [u"https://192.168.0.1/",u"https://127.0.0.1"],
         },
         {
             "input": u"my test server: http://1.2.3.4:8888 not 5.5.6.6:5566",
