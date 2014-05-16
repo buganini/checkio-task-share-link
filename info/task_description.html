@@ -19,7 +19,12 @@
     </p>
     <pre class="brush: python">
     assert checkio(u"blah http://台灣.taipei/ blah") == [u"http://台灣.taipei/"]
-    assert checkio(u"PyCON APAC 2014 http://pycon.tw/ en: https://tw.pycon.org/2014apac/setlang/?language=en&next= zh: https://tw.pycon.org/2014apac/setlang/?language=zh&next= ja: https://tw.pycon.org/2014apac/setlang/?language=ja&next=") == [
+    assert checkio(u"""
+        PyCON APAC 2014 http://pycon.tw/
+        en: https://tw.pycon.org/2014apac/setlang/?language=en&next=
+        zh: https://tw.pycon.org/2014apac/setlang/?language=zh&next=
+        ja: https://tw.pycon.org/2014apac/setlang/?language=ja&next="""
+        ) == [
         u'http://pycon.tw/',
         u'https://tw.pycon.org/2014apac/setlang/?language=en&next=',
         u'https://tw.pycon.org/2014apac/setlang/?language=zh&next=',
