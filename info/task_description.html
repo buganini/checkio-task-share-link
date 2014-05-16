@@ -1,5 +1,5 @@
 <p>
-    Get HTTP/HTTPS Hyperlinks in communications.
+    Find HTTP/HTTPS hyperlinks in communications.
 </p>
 
 <p>
@@ -13,13 +13,17 @@
     <strong>Output: </strong> A list contains all URLs in class string.
 </p>
 
-
-
 <div class="for_info_only">
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(u"http://台灣.taipei/") == [u"http://台灣.taipei/"]
+    assert checkio(u"blah http://台灣.taipei/ blah") == [u"http://台灣.taipei/"]
+    assert checkio(u"PyCON APAC 2014 http://pycon.tw/ en: https://tw.pycon.org/2014apac/setlang/?language=en&next= zh: https://tw.pycon.org/2014apac/setlang/?language=zh&next= ja: https://tw.pycon.org/2014apac/setlang/?language=ja&next=") == [
+        u'http://pycon.tw/',
+        u'https://tw.pycon.org/2014apac/setlang/?language=en&next=',
+        u'https://tw.pycon.org/2014apac/setlang/?language=zh&next=',
+        u'https://tw.pycon.org/2014apac/setlang/?language=ja&next='
+    ]
     </pre>
 </div>
